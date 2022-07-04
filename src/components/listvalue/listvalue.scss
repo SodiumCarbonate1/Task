@@ -1,0 +1,230 @@
+.listvalue{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    .list_menu{
+        .accountSum,.payments{
+            width: 1500px;
+            height: 85px;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0 10px 0;
+        }
+    
+        .accountSum{
+            overflow-y: hidden;
+            .text{
+                flex: 0.95;
+                p{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32.74px;
+                    margin: auto;
+                    text-align: left;
+                }
+            }
+        }
+    
+        .payments{
+            overflow-y: hidden;
+            display: flex;
+            justify-content: flex-start;
+            height:60px;
+            ul{
+                margin:10px;
+                padding: 10px;
+                list-style: none;
+                display: flex;
+                li{
+                    flex-direction: row;
+                    font-size:14px;
+                    margin-left:50px;
+                    margin-top:15px;
+                    overflow-y: hidden;
+                    cursor: pointer;
+                    .combination{
+                        display: flex;
+                        p{
+                            margin-left: 5px;
+                        }
+                    }
+                    &.active{ 
+                        border-bottom: 2px solid black;
+                        color: black;
+                    }
+                }
+            }
+    
+        }
+    
+        .transaction{
+            background-color: transparent;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            .item{ 
+                margin-top: 10px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height:155px;
+                background-color: white;
+
+                .whole{
+                    margin-left:10px;
+                    flex: 0.9;
+                    width: 100%;
+                    height: 155px;
+                    font-family: 'Roboto', sans-serif;
+                    overflow-y: hidden;
+                    .coinName{
+                        padding: 5px;
+                        .title{
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 27.28px;
+                        }
+                        .date{
+                            color:#616161;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 15.82px;
+                            overflow-y: hidden;
+                        }
+                        .type{
+                            display: flex;
+                            position: relative;
+                            width: 70px;
+                            height: 35px;
+                            text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 8px;
+                            margin-top: -35px;
+                            margin-left: 223px;
+                            margin-bottom: 4px;
+                            top: -32px
+                            
+    
+                        }
+                    }
+                    .comb{
+                        width: 80%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        text-align: left;
+                        .averagePrice,
+                        .executedAmount,
+                        .orderPrice,
+                        .orderAmount
+                        {
+                            font-size: 16px;
+                            line-height: 21.82px;
+                            font-weight: 400;
+                            .subtitle{
+                                color:#979797;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 21.82px;
+                                padding-bottom: -10px;
+                            }
+                            .number{
+                                color:black;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 24.55px;
+                            }
+                        }
+                    }
+    
+                }
+                .download{
+                    flex: 0.1;
+                    justify-content: center;
+                    align-items: center;
+                    overflow-y: hidden;
+                    margin: auto;
+                    width: 180px;
+                    height: 130px;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 1px solid #D4CCF7;
+                    cursor: pointer;
+    
+                    p{
+                        margin-top: 15.64px;
+                        width: 300px;
+                        color: #6B47ED;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 21.82px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+        &::-webkit-scrollbar{
+            display: none ;
+        }
+    }
+    .pagination{
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        top: 80%;
+        overflow-y: hidden;
+
+        align-items: center;
+
+        .pageitem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left:10px;
+            overflow-y: hidden;
+            text-align: center;
+            background-color: white;
+
+            a{
+                width: 45px;
+                height: 45px;
+                text-decoration: none;
+                color: #616161;
+                background-color: white;
+                border-radius: 30px;
+                padding: 10px;
+
+                &:hover{
+                    color:#6b48ed;
+                    border:1px solid #6b48ed;
+                    border-radius: 40px;
+                    overflow-y: hidden;
+                    
+                }
+            }
+        }
+        .pageitem.active a{
+            color:#6b48ed;
+            border:1px solid #6b48ed;
+            border-radius: 40px;
+
+            overflow-y: hidden;
+
+        }
+    }
+}
+
